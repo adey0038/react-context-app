@@ -23,7 +23,7 @@
 .resultCard button {
   padding: 0.5rem 1rem;
   background-color: var(--primary-color);
-  color: var(--text-color);
+  color: var(--button-text);
   border: none;
   border-radius: 2rem;
   cursor: pointer;

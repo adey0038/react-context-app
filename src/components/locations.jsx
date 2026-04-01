@@ -1,10 +1,18 @@
-import styles from "../styles/location.modile.css";
+import { useWeather } from "../context/weatherContext.jsx";
+import LocationCard from "./locationCard.jsx";
+import styles from "../styles/location.module.css";
 
-export default function LocationCard({ location }) {
+export default function Locations() {
+  const { locations } = useWeather();
+
+  if (!locations || locations.length === 0) return <p>No saved locations</p>;
+
   return (
-    <div className={styles.card}>
-      <h3>{location.name}</h3>
-      <p>{location.description}</p>
+    <div className={styles.locations}>
+      <h3>Saved Locations</h3>
+      {locations.map((loc) => (
+        <LocationCard key={`${loc.lat}-${loc.lon}`} location={loc} />
+      ))}
     </div>
   );
 }

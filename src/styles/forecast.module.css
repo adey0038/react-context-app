@@ -1,0 +1,38 @@
+.forecast {
+  padding: 1rem;
+  color: var(--button-text);
+}
+
+.forecast h3 {
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 1.5rem;
+}
+
+.forecastGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.forecastCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--card-color);
+  color: var(--button-text);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.forecastCard img {
+  width: 50px;
+  height: 50px;
+}
+
+.forecastCard p {
+  margin: 1rem;
+  font-size: 1rem;
+}
