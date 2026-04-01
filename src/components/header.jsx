@@ -1,12 +1,10 @@
-import styles from ".header.module.css";
+import styles from "../styles/header.module.css";
 
-export default function Header(props) {
-  const { title, subtitle } = props;
-
+export default function Header() {
   return (
     <header className={styles.header}>
-      <h1>{title ? title : "Weather App"}</h1>
-      <h2>{subtitle ? subtitle : "Oluwafunke Adeyemo"}</h2>
+      <h1>Weather App</h1>
+      <h2>Oluwafunke Adeyemo</h2>
     </header>
   );
 }
