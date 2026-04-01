@@ -1,0 +1,33 @@
+.searchBar {
+  padding: 1rem 2rem;
+  background-color: var(--secondary-color);
+}
+
+.searchBar form {
+  display: flex;
+  border-radius: 2rem;
+  align-items: center;
+}
+
+.searchBar input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.searchBar button {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.searchBar button:hover {
+  background-color: var(--secondary-color);
+}
