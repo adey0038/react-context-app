@@ -29,7 +29,8 @@ export default function SearchBar() {
           placeholder="Search for a city..."
         />
         <button type="submit">
-          <span className="material-symbols-outlined">Search</span>
+          <span className="material-symbols-outlined">search</span>
+          Search Location
         </button>
       </form>
     </div>

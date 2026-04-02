@@ -29,9 +29,12 @@ export default function LocationCard({ location }) {
         <p>
           {location.state ?? ""}, {location.country}
         </p>
+        <span>{location.lat}</span>
+        <span>{location.lon}</span>
       </div>
       <button className={styles.removeBtn} onClick={handleRemove}>
-        <span className="material-symbols-outlined">Delete</span>
+        <span className="material-symbols-outlined">delete</span>
+        Remove
       </button>
     </div>
   );

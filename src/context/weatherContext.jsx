@@ -20,6 +20,12 @@ export function WeatherProvider({ children }) {
 
   //Add location
   const addLocation = (loc) => {
+    if (locations.length >= 5) {
+      alert(
+        "You can only save up to 5 locations. Please remove one to add a new one.",
+      );
+      return;
+    }
     setLocations((prev) => {
       const updated = [...prev, loc];
       localStorage.setItem("locations", JSON.stringify(updated));

@@ -1,8 +1,10 @@
 .header {
   background-color: var(--primary-color);
   margin: 0;
-  padding: 1rem 2rem;
+  padding-inline: 1rem;
+  padding-block: 2rem;
   box-shadow: 0 2px 4px var(--shadow);
+  border-bottom: var(--border);
 }
 
 .header h1 {
@@ -15,8 +17,9 @@
 .header h2 {
   color: var(--secondary-color);
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   margin: 0;
-  padding: 1rem 2rem;
+  padding-block: 1rem;
   font-style: italic;
+  line-height: 1.5;
 }

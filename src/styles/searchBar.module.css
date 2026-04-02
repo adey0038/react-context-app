@@ -7,6 +7,7 @@
   display: flex;
   border-radius: 2rem;
   align-items: center;
+  gap: 1rem;
 }
 
 .searchBar input {
@@ -19,11 +20,14 @@
 }
 
 .searchBar button {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
   padding: 0.5rem 1rem;
   background-color: var(--primary-color);
-  color: var(--button-text);
+  color: var(--text-color);
   border: none;
-  border-radius: 2rem;
+  border-radius: 1rem;
   cursor: pointer;
   font-size: 1.2rem;
 }

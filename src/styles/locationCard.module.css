@@ -1,39 +1,54 @@
 .locationCard {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   padding: 1rem;
   background-color: var(--card-color);
-  color: var(--text-color);
-  border-radius: 2rem;
+  color: var(--button-text);
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px var(--shadow);
+  gap: 1rem;
   cursor: pointer;
   box-shadow: 0 2px 4px var(--shadow);
 }
 
 .locationCard:hover {
   background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .selected {
   border: 2px solid var(--secondary-color);
 }
 
+.locationInfo {
+  display: flex;
+  flex-direction: column;
+}
+
 .locationInfo h4 {
-  margin: 1rem;
-  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
 }
 
 .locationInfo p {
-  margin: 1rem;
+  /* margin: 1rem; */
   font-size: 0.9rem;
 }
 
 .removeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
   background: var(--remove);
   border: none;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: var(--text-color);
+  padding-inline: 1.2rem;
+  padding-block: 0.25rem;
+  margin-top: 1rem;
 }
 
 .removeBtn:hover {

@@ -1,5 +1,5 @@
 import { useWeather } from "../context/weatherContext";
-import styles from "../styles/search-results.module.css";
+import styles from "../styles/searchResults.module.css";
 
 export default function SearchResults() {
   const { searchResults, addLocation } = useWeather();
@@ -14,11 +14,14 @@ export default function SearchResults() {
       {searchResults.map((result) => (
         <div className={styles.resultCard} key={`${result.lat}-${result.lon}`}>
           <div className={styles.resultInfo}>
-            <span>{result.name}</span>
-            <span>{result.country ?? ""}</span>
-            <span>{result.state ?? ""}</span>
+            <span className={styles.city}>{result.name}</span>
+            <span>
+              {result.state ?? ""}, {result.country ?? ""}
+            </span>
+            <span>{result.lat}</span>
+            <span>{result.lon}</span>
           </div>
-          <button onClick={() => addLocation(result)}>Save</button>
+          <button onClick={() => addLocation(result)}>Save Location</button>
         </div>
       ))}
     </div>

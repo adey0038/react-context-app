@@ -1,12 +1,18 @@
 .locations {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
   padding: 1rem;
-  gap: 2rem;
 }
 
 .locations h3 {
+  grid-column: 1/ -1;
   color: var(--text-color);
-  padding: 1rem;
-  margin: 1rem;
+  /* margin: 1rem; */
+}
+
+.message {
+  margin: 2rem;
+  font-size: 1.2rem;
+  color: var(--text-color);
 }

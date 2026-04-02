@@ -1,34 +1,47 @@
 .searchResults {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .resultCard {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem;
-  margin: 1rem;
   background-color: var(--card-color);
-  color: var(--text-color);
+  color: var(--button-text);
   border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px var(--shadow);
+  gap: 0.5rem;
 }
 
 .resultInfo {
   display: flex;
-  gap: 4rem;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.city {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .resultCard button {
+  width: 100%;
   padding: 0.5rem 1rem;
   background-color: var(--primary-color);
   color: var(--button-text);
   border: none;
   border-radius: 2rem;
   cursor: pointer;
+  font-size: 0.9rem;
 }
 
 .resultCard button:hover {
   background-color: var(--secondary-color);
+  color: var(--text-color);
 }
