@@ -53,6 +53,10 @@ export function WeatherProvider({ children }) {
       const url = `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${API_KEY}`;
       const res = await fetch(url);
       const data = await res.json();
+      if (!Array.isArray(data)) {
+        setSearchResults([]);
+        return;
+      }
       if (data.length === 0) {
         setSearchResults([]);
       } else {
